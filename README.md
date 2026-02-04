@@ -16,7 +16,7 @@ Learn the foundational concepts of the C language.
 - **Header File** (`myvar.h`) - Custom header for reusable code
 
 ---
-<!-- 
+
 ## Unit 2: Control Flow & Functions
 
 Master decision-making and iterative structures, plus function fundamentals.
@@ -31,6 +31,7 @@ Master decision-making and iterative structures, plus function fundamentals.
 
 ---
 
+<!-- 
 ## Unit 3: Data Structures & I/O
 
 Explore complex data organization and advanced input/output operations.
