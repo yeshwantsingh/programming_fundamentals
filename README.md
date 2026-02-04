@@ -109,6 +109,44 @@ gcc file1.c file2.c -o program_name
 
 ---
 
+## Debugging with GDB
+
+To debug your C programs using the GNU Debugger (gdb):
+
+1. **Compile with debug symbols**:
+   ```bash
+   gcc -g filename.c -o output_name
+   ```
+
+2. **Start gdb**:
+   ```bash
+   gdb output_name
+   ```
+
+3. **Common gdb commands**:
+   - `run` or `r`: Run the program
+   - `break` or `b` <line_number>: Set a breakpoint at a specific line
+   - `break` or `b` <function_name>: Set a breakpoint at a function
+   - `next` or `n`: Execute next line (step over)
+   - `step` or `s`: Step into function calls
+   - `print` or `p` <variable>: Print the value of a variable
+   - `continue` or `c`: Continue execution until next breakpoint
+   - `backtrace` or `bt`: Show the call stack
+   - `quit` or `q`: Exit gdb
+
+4. **Example debugging session**:
+   ```bash
+   (gdb) break main
+   (gdb) run
+   (gdb) next
+   (gdb) print x
+   (gdb) continue
+   ```
+
+For more detailed information, refer to the [gdb manual](https://www.gnu.org/software/gdb/documentation/).
+
+---
+
 ## Additional Resources
 
 - Practice implementing variations of the provided examples
