@@ -1,15 +1,22 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int* allocateMemory(int size)
+{
+    int *ptr = (int *)malloc(size * sizeof(int));
+    return ptr;
+}
+
 int main() {
     printf("--- Dynamic Memory Allocation ---\n");
     
+    int *ptr = allocateMemory(5);
     // malloc: allocate memory
-    int *ptr = (int *)malloc(5 * sizeof(int));
     if (ptr == NULL) {
         printf("Memory allocation failed\n");
         return 1;
     }
+    
     
     // Assign values
     for (int i = 0; i < 5; i++) {
@@ -17,6 +24,7 @@ int main() {
         printf("ptr[%d] = %d\n", i, ptr[i]);
     }
     
+    printf("===============\n");
     // realloc: resize memory
     ptr = (int *)realloc(ptr, 10 * sizeof(int));
     if (ptr == NULL) {
