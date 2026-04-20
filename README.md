@@ -31,7 +31,7 @@ Master decision-making and iterative structures, plus function fundamentals.
 
 ---
 
-<!-- 
+
 ## Unit 3: Data Structures & I/O
 
 Explore complex data organization and advanced input/output operations.
@@ -71,7 +71,7 @@ Work with persistent data storage and introduce object-oriented principles in C.
 - **File I/O Operations** (`2_file_io_operations.c`) - fread(), fwrite(), fprintf(), fscanf(); text and binary file handling
 - **OOP Concepts** (`3_oop_concepts.cpp`) - Object-oriented programming principles and their application in C/C++
 
---- -->
+---
 
 ## Learning Path
 
